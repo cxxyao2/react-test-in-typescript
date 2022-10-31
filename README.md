@@ -11,4 +11,4 @@ yarn test
 
 ## Proofs
 
-![component](./public/component.png)
+![component](./public/Component.png)
