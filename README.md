@@ -1,8 +1,10 @@
 ## commands
+```
 yarn add package-name
 yarn add pakcage-name --dev
 yarn create react-app my-app --template typescript
 yarn test
+```
 
 ## tools
 
