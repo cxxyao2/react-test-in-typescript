@@ -1,4 +1,5 @@
 ## commands
+
 ```
 yarn add package-name
 yarn add pakcage-name --dev
@@ -24,4 +25,4 @@ yarn test
 
 ## Proofs
 
-![component](./public/Component.png)
+![screenshot](./public/screenshot.jpg)
