@@ -6,14 +6,26 @@ import '@testing-library/jest-dom'
 
 import ToggleButton from './ToggleButton'
 
+beforeEach(() => {
+  jest.useFakeTimers()
+})
+
+afterEach(() => {
+  jest.useRealTimers()
+})
+
 test('Pressing the button hides the text', async () => {
-  const user = userEvent.setup()
+  const user = userEvent.setup({ delay: null })
 
   render(<ToggleButton />)
   const button = screen.getByRole('button')
 
+  const content = screen.getByTestId<HTMLDivElement>('content')
+   expect(content).toContainHTML('Hello')
   await user.click(button)
+  act(() => {
+    jest.runAllTimers()
+  })
 
-  const text = screen.getByText('Hello World')
-  await waitFor(() => expect(text).not.toBeInTheDocument())
+  expect(content).not.toContain('Hello')
 })

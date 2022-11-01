@@ -7,7 +7,7 @@ export const CardTimeout = ({ onSelect }: CardTimeoutProps) => {
   useEffect(() => {
     const timeoutID = setTimeout(() => {
       onSelect(null)
-    }, 5000)
+    }, 500)
 
     return () => {
       clearTimeout(timeoutID)

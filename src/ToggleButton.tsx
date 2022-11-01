@@ -4,12 +4,12 @@ const ToggleButton = () => {
   const [isDisplayed, setIsDisplayed] = useState(true)
 
   const toggleHandler = () => {
-    setTimeout(() => setIsDisplayed((pre) => !pre), 1000)
+    setTimeout(() => setIsDisplayed((pre) => !pre), 500)
   }
 
   return (
     <>
-      <div> {isDisplayed && <p>Hello World</p>}</div>
+      <div data-testid='content'> {isDisplayed && <p>Hello</p>}</div>
       <button onClick={toggleHandler}>toggle</button>
     </>
   )
