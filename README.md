@@ -18,11 +18,13 @@ restore references
 mockImplementation is global, so we should restore the previous implementation
 `Math.abs = jest.spyOn(Math,'abs').mockImplementation((x)=>x+1) ... ... Math.abs.mockRestore()`
 
-## tools
+## libraries
 
 - Typescript
 - React + Redux
 - jest + @testing-library/react
+- React Router
+- React Transition Group
 
 ## tested
 
@@ -34,7 +36,8 @@ mockImplementation is global, so we should restore the previous implementation
 - custom hook
 - Redux
 - todo HTML elements: select, checkbox,
-- Test login form
+- todo: Context
+- Test input in login form
 - ...
 
 ## Proofs
@@ -45,4 +48,5 @@ mockImplementation is global, so we should restore the previous implementation
 
 ## References
 
-[1. fake timers](https://onestepcode.com/testing-library-user-event-with-fake-timers)
+[1. react samples](https://testing-library.com/docs/example-codesandbox)
+[2. fake timers](https://onestepcode.com/testing-library-user-event-with-fake-timers)
