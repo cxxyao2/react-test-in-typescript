@@ -32,7 +32,8 @@ mockImplementation is global, so we should restore the previous implementation
 - React + Redux
 - jest + @testing-library/react
 - React Router
-- React Transition Group
+- React-transition-group
+- msw
 
 ## tested
 
@@ -43,10 +44,11 @@ mockImplementation is global, so we should restore the previous implementation
 - test async Function call
 - custom hook
 - Redux
-- todo HTML elements: select, checkbox,
-- todo: Context
-- todo: router
+- HTML elements: select, checkbox,
+- Custom Context
+- router
 - todo: transition group
+- todo: test converage
 - Test input in login form
 - ...
 
@@ -58,8 +60,18 @@ mockImplementation is global, so we should restore the previous implementation
 
 ## References
 
-[1. react samples](https://testing-library.com/docs/example-codesandbox)
+[1. react samples](https://testing-library.c
+om/docs/example-codesandbox)
 
 [2. fake timers](https://onestepcode.com/testing-library-user-event-with-fake-timers)
 
 [3. test select](https://cathalmacdonnacha.com/how-to-test-a-select-element-with-react-testing-library)
+
+## JSX.IntrinsicElements
+
+```
+
+JSX.IntrinsicElements["div"]; // All properties of a "div"
+JSX.IntrinsicElements["span"]; // All properties of a "span"
+
+```

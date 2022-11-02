@@ -64,8 +64,10 @@ test('should be checked by default', async () => {
   expect(checkbox).not.toBeChecked()
 
   await userEvent.click(screen.getByRole('checkbox'))
-
   expect(screen.getByRole('checkbox')).toBeChecked()
+
+  await userEvent.click(screen.getByRole('checkbox'))
+  expect(screen.getByRole('checkbox')).not.toBeChecked()
 })
 
 test('Button has correct inital color', async () => {
