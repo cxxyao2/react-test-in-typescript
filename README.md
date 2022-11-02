@@ -1,6 +1,7 @@
 ## setup test environment
 
-- install the same versions
+- attention: keep the versions of all libraries the same as in package.json
+- use google search and javascript knowledge if a target to test or a property is not found
 - yarn install
 
 ## commands
@@ -38,6 +39,7 @@ mockImplementation is global, so we should restore the previous implementation
 - todo HTML elements: select, checkbox,
 - todo: Context
 - todo: router
+- todo: transition group
 - Test input in login form
 - ...
 
@@ -47,8 +49,10 @@ mockImplementation is global, so we should restore the previous implementation
 
 ![async-test](./public/async-function-test.jpg)
 
-## References keiya ken
+## References
 
 [1. react samples](https://testing-library.com/docs/example-codesandbox)
+
 [2. fake timers](https://onestepcode.com/testing-library-user-event-with-fake-timers)
+
 [3. test select](https://cathalmacdonnacha.com/how-to-test-a-select-element-with-react-testing-library)
