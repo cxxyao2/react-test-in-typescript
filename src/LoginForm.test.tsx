@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { render, screen } from '@testing-library/react'
+import { render, screen, queryByAttribute } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 import LoginForm from './LoginForm'
@@ -28,4 +28,15 @@ test('should be able to type an valid email', async () => {
   await user.click(screen.getByRole('button', { name: 'Login' }))
 
   expect(await screen.findByText('Email is invalid')).toBeVisible()
+})
+
+test('should correctly set the default option', () => {
+  render(<LoginForm />)
+  expect(
+    (
+      screen.getByRole('option', {
+        name: 'Select a country'
+      }) as HTMLOptionElement
+    ).selected
+  ).toBe(true)
 })

@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 
 function LoginForm() {
+  const countries = [
+    {name:"Austria", isoCode:'AT'},
+    {name:"United States", isoCode:'US'},
+    {name:"Ireland", isoCode:'IE'}
+
+  ]
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -16,6 +22,16 @@ function LoginForm() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
+        <select>
+          <option>Select a country</option>
+          {countries.map(country=>(
+            <option key={country.isoCode}
+            value={country.isoCode}
+            >
+              {country.name}
+            </option>
+          ))}
+        </select>
         <label htmlFor="email">Email</label>
         <input
         data-testid='email'

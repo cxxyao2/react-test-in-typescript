@@ -51,3 +51,4 @@ mockImplementation is global, so we should restore the previous implementation
 
 [1. react samples](https://testing-library.com/docs/example-codesandbox)
 [2. fake timers](https://onestepcode.com/testing-library-user-event-with-fake-timers)
+[3. test select](https://cathalmacdonnacha.com/how-to-test-a-select-element-with-react-testing-library)
