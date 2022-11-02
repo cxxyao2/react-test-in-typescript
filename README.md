@@ -6,7 +6,14 @@
 
 ## commands
 
-`yarn add package-name yarn add pakcage-name --dev yarn create react-app my-app --template typescript yarn test yarn test -- ./LoginForm.test.tsx`
+```
+yarn add package-name
+yarn add pakcage-name --dev
+yarn create react-app my-app --template typescript
+yarn test
+yarn test -- ./LoginForm.test.
+
+```
 
 skipping test with test.skip
 `test.skip('some description', ()=>{})`
