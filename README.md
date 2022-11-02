@@ -4,6 +4,19 @@
 - use google search and javascript knowledge if a target to test or a property is not found
 - yarn install
 
+## package.json
+
+```
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:cover": "react-scripts test --coverage src",
+    "eject": "react-scripts eject"
+  },
+
+```
+
 ## commands
 
 ```
@@ -57,6 +70,8 @@ mockImplementation is global, so we should restore the previous implementation
 ![test-result](./public/screenshot.jpg)
 
 ![async-test](./public/async-function-test.jpg)
+
+![coverage](./public/test-coverage.jpg)
 
 ## References
 
