@@ -37,6 +37,7 @@ mockImplementation is global, so we should restore the previous implementation
 - Redux
 - todo HTML elements: select, checkbox,
 - todo: Context
+- todo: router
 - Test input in login form
 - ...
 
@@ -46,7 +47,7 @@ mockImplementation is global, so we should restore the previous implementation
 
 ![async-test](./public/async-function-test.jpg)
 
-## References
+## References keiya ken
 
 [1. react samples](https://testing-library.com/docs/example-codesandbox)
 [2. fake timers](https://onestepcode.com/testing-library-user-event-with-fake-timers)
