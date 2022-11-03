@@ -60,10 +60,10 @@ mockImplementation is global, so we should restore the previous implementation
 - HTML elements: select, checkbox,
 - Custom Context
 - router
-- todo: transition group
-- todo: test converage
+- transition group
+- test converage
 - Test input in login form
-- ...
+- partial matching
 
 ## Proofs
 
